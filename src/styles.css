@@ -245,6 +245,138 @@ textarea {
   background: linear-gradient(90deg, #176b87, #64b6ac);
 }
 
+.notice {
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #e8f4ef;
+  color: #14724f;
+  border: 1px solid #c8e6d8;
+}
+
+.hint {
+  color: #69758c;
+  font-size: 13px;
+}
+
+.batch-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.batch-list h3, .issues h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.batch-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #dfe7f1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fbfcfe;
+}
+
+.batch-item div {
+  display: grid;
+  gap: 2px;
+  color: #536078;
+  font-size: 13px;
+}
+
+.batch-item strong {
+  color: #172033;
+  font-size: 14px;
+}
+
+.issues {
+  margin-top: 16px;
+  border: 1px solid #f0cfC4;
+  border-radius: 8px;
+  background: #fdf1ec;
+  color: #a03a24;
+  padding: 12px 14px;
+}
+
+.issues ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.status.blocked {
+  background: #fdf1ec;
+  color: #a03a24;
+}
+
+.conflict {
+  border: 1px dashed #d9b48f;
+  border-radius: 8px;
+  background: #fffaf3;
+  padding: 12px;
+  margin: 0 0 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.conflict-head {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #445069;
+  font-size: 13px;
+}
+
+.conflict-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.conflict-field {
+  color: #536078;
+  font-size: 13px;
+}
+
+.choice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #dfe7f1;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+  font-size: 13px;
+  color: #445069;
+  cursor: pointer;
+}
+
+.choice input {
+  width: auto;
+  margin: 0;
+}
+
+.choice.picked {
+  border-color: #176b87;
+  background: #eef5fb;
+  color: #176b87;
+  font-weight: 600;
+}
+
+.shell > .list-panel {
+  margin-top: 18px;
+}
+
 .empty {
   text-align: center;
   color: #69758c;
@@ -257,4 +389,5 @@ textarea {
   .stack { justify-content: flex-start; }
   .metrics { grid-template-columns: 1fr; }
   .details { grid-template-columns: 1fr; }
+  .conflict-row { grid-template-columns: 1fr; }
 }
